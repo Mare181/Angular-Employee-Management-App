@@ -24,22 +24,22 @@
         <form ngNativeValidate #form >
             <div>
                 <label>First Name: </label>
-                <input type="text" placeholder="Toni" pattern="[A-Za-z0-9]{3,}" [(ngModel)]="user.FirstName" [ngModelOptions]="{standalone: true}" required>
+                <input type="text" id="search" placeholder="Toni" pattern="[A-Za-z0-9]{3,}" [(ngModel)]="user.FirstName" [ngModelOptions]="{standalone: true}" required>
             </div>
 
             <div>
                 <label>Last Name: </label>
-                <input type="text" placeholder="Test" pattern="[A-Za-z0-9]{3,}" [(ngModel)]="user.LastName" [ngModelOptions]="{standalone: true}" required>
+                <input type="text" id="search" placeholder="Test" pattern="[A-Za-z0-9]{3,}" [(ngModel)]="user.LastName" [ngModelOptions]="{standalone: true}" required>
             </div>
 
             <div>
                 <label>Full Name: </label>
-                <input type="text" placeholder="Toni Test"pattern="[A-Za-z0-9- ]{3,}" [(ngModel)]="user.FullName" [ngModelOptions]="{standalone: true}" required>
+                <input type="text" id="search" placeholder="Toni Test"pattern="[A-Za-z0-9- ]{3,}" [(ngModel)]="user.FullName" [ngModelOptions]="{standalone: true}" required>
             </div>
 
             <div>
                 <label>Email: </label>
-                <input type="text" placeholder="toni@mail.si"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]="user.Email" [ngModelOptions]="{standalone: true}" required>
+                <input type="text" id="search" placeholder="toni@mail.si"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]="user.Email" [ngModelOptions]="{standalone: true}" required>
             </div>
 
             <div>
