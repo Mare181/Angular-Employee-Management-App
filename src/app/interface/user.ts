@@ -1,0 +1,33 @@
+export interface User {
+    Id?: string;
+    FirstName: string;
+    LastName: string;
+    MiddleName?: any;
+    FullName: string;
+    BirthDate?: any;
+    Address?: any;
+    City?: any;
+    State?: any;
+    Phone?: any;
+    Mobile?: any;
+    Email: string;
+    Gender?: string;
+    PictureUri?: any;
+    CustomId?: any;
+    CustomField1?: any;
+    CustomField2?: any;
+    CustomField3?: any;
+    CustomField4?: any;
+    CustomField5?: any;
+    CustomField6?: any;
+    CustomField7?: any;
+    CustomField8?: any;
+    CustomField9?: any;
+    CustomField10?: any;
+    IsTimeAttendanceUser?: boolean;
+    IsArchived?: boolean;
+    HasUserAccount?: boolean;
+    UserAccountId?: any;
+    CalculationStartDate?: any;
+    CalculationStopDate?: any;
+}

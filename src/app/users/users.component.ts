@@ -16,4 +16,12 @@ export class UsersComponent implements OnInit {
   onPostCredentials(): void{
     this.userService.postCredentials();
   }
+
+  onGetUsers(): void{
+    this.userService.getUsers().subscribe(
+      (response) => console.table(response),
+      (error: any) => console.log(error),
+      () => console.log('Done getting users')
+    );
+  }
 }
