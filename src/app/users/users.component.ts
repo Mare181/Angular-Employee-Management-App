@@ -43,16 +43,15 @@ export class UsersComponent implements OnInit {
         this.users = response;
       },
       (error: any) => console.log(error),
-      //() => console.log('Done getting users')
+      () => console.log('Done getting users')
     );
   }
 
   onCreateUser(): void{
     this.userService.createUser(this.user).subscribe(
-      (response) => console.log(response),
+      (response) => (response),
       (error: any) => console.log(error),
       () => console.log('Done creating user')
     );
-    this.onGetUsers();
   }
 }
