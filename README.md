@@ -16,4 +16,5 @@ Click on "Get Users" button in order to get table of all users. In search bar yo
 ## References
 
 Search filter pipe was modeled after example found in following link.
+
 [Custom Search filter pipe for table search in Angular 10.](https://jhapriti09.medium.com/custom-search-filter-pipe-for-table-search-in-angular-10-4b8a0f42513d)
