@@ -1,6 +1,6 @@
 # AngularEmployeeManagementApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+In this web application you can access list of all employees in the company, search for particular employee or add new employee.
 
 ## Installation
 
