@@ -2,26 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
+Clone this GitHub repository `gh repo clone Mare181/AngularEmployeeManagementApp`.
+In file app/users/users.service.ts enter CLIENT_ID and CLIENT_SECRET.
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Usage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Build and deploy application or run it on development server with `ng serve`.
+Click on "Get Users" button in order to get table of all users. In search bar you can search for particular user. To add new user click on "Add new User" button and fill out the form.
 
-## Running end-to-end tests
+## References
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Search filter pipe was modeled after example found in following link.
+[Custom Search filter pipe for table search in Angular 10.](https://jhapriti09.medium.com/custom-search-filter-pipe-for-table-search-in-angular-10-4b8a0f42513d)
