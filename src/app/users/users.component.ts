@@ -9,11 +9,19 @@ import { UsersService } from '../users/users.service';
 })
 export class UsersComponent implements OnInit {
 
+  searchText: string | undefined;
+
+  isShowDivIf = true;
+   
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
+
   user: User =  {
-    'FirstName': 'Testni',
-    'LastName': 'User',
-    'FullName':'Testni User',
-    'Email': 'testni@user.com',
+    'FirstName': '',
+    'LastName': '',
+    'FullName':'',
+    'Email': '',
   };
 
   constructor(private userService: UsersService) {}

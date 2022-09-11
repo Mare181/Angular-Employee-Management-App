@@ -6,7 +6,9 @@
     <button (click)="onCreateUser()">Post User</button>
 
 
-
+    <div class = "form-group" id="searchbar" style="width:200px !important;">
+        <input id="search" type="text" style="font-size:12pt;" class="form-control search field" placeholder="Search Here" [(ngModel)]="searchText">
+    </div>
 
     <table class="table table-striped" id="users">
         <thead>
@@ -17,7 +19,7 @@
             </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let user of users">
+          <tr *ngFor="let user of users | SearchFilter: searchText">
               <td>{{user.FirstName}}</td>
               <td>{{user.LastName}}</td>
               <td>{{user.FullName}}</td>
