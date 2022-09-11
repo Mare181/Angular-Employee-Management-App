@@ -4,4 +4,24 @@
     <br>
     <button (click)="onGetUsers()">Get Users</button>
 
+
+
+
+    <table class="table table-striped" id="users">
+        <thead>
+            <tr>
+              <th *ngFor="let col of columns">
+                  {{col}}
+              </th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+              <td>{{user.FirstName}}</td>
+              <td>{{user.LastName}}</td>
+              <td>{{user.FullName}}</td>
+              <td>{{user.Email}}</td>
+          </tr>
+        </tbody>
+      </table>
 </div>

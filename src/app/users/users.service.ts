@@ -23,7 +23,7 @@ export class UsersService {
         const myHeadersAuth = new HttpHeaders({'content-type': 'application/x-www-form-urlencoded'})
         const body = `grant_type=client_credentials&client_id=${this.CLIENT_ID}&client_secret=${this.CLIENT_SECRET}&scope=api`;
         this.http.post<any>(`https://login.allhours.com/connect/token`, body, {headers: myHeadersAuth}).subscribe(data => {
-            console.log(data['access_token']);
+            //console.log(data['access_token']);
             this.ACCESS_TOKEN = data['access_token'];
         });
      }
