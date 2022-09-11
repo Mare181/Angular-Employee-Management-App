@@ -9,6 +9,13 @@ import { UsersService } from '../users/users.service';
 })
 export class UsersComponent implements OnInit {
 
+  user: User =  {
+    'FirstName': 'Testni',
+    'LastName': 'User',
+    'FullName':'Testni User',
+    'Email': 'testni@user.com',
+  };
+
   constructor(private userService: UsersService) {}
 
   columns = ['First Name', 'Last Name', 'Full Name', 'Email'];
@@ -30,5 +37,14 @@ export class UsersComponent implements OnInit {
       (error: any) => console.log(error),
       //() => console.log('Done getting users')
     );
+  }
+
+  onCreateUser(): void{
+    this.userService.createUser(this.user).subscribe(
+      (response) => console.log(response),
+      (error: any) => console.log(error),
+      () => console.log('Done creating user')
+    );
+    this.onGetUsers();
   }
 }

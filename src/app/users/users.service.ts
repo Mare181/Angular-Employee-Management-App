@@ -32,4 +32,9 @@ export class UsersService {
         const myHeaders = new HttpHeaders({'authorization': `Bearer ${this.ACCESS_TOKEN}`  , 'content-type': 'application/json'})
         return this.http.get<User[]>(`${this.apiUrl}/api/v1/Users`, {headers: myHeaders});
      }
+
+     createUser(user: User):Observable<User>{
+        const myHeaders = new HttpHeaders({'authorization': `Bearer ${this.ACCESS_TOKEN}`  , 'content-type': 'application/json'})
+        return this.http.post<User>(`${this.apiUrl}/api/v1/Users`, user, {headers: myHeaders});
+     }
 }
